@@ -7,13 +7,13 @@
 global $translation_name;
 
 if (has_post_thumbnail()) {
-	$class[] = "col-tb-7";
+	$class[] = "col-tb-8";
 }else{
 	$class[] = "col-mb-12";
 }
 ?>
 <?php if (has_post_thumbnail()): ?>
-<div id="post-<?php the_ID(); ?>-img" class="post-image col-tb-5">
+<div id="post-<?php the_ID(); ?>-img" class="post-image col-tb-4">
 	<!-- <img src="http://placehold.it/700x500" alt=""> -->
 	<?php the_post_thumbnail( "image_principale" ) ?>
 </div>
@@ -37,13 +37,13 @@ if (has_post_thumbnail()) {
 <?php if (have_rows("encan_item")): ?>
 <div class="encan clear-all">
 	<?php while(have_rows("encan_item")): the_row(); ?>
-	<div class="encan__item">
+	<div class="encan__item clear-all">
 		<?php if (get_sub_field("encan_image")): ?>
-		<div class="encan__item-image col-tb-5">
+		<div class="encan__item-image col-tb-4">
 		<?php echo wp_get_attachment_image( get_sub_field("encan_image"), "image_principale"); ?>
 		</div>
 		<?php endif ?>
-		<div class="encan__item-contenu <?php echo (get_sub_field("encan_image")?"col-tb-7":"col-tb-12") ?>">		
+		<div class="encan__item-contenu <?php echo (get_sub_field("encan_image")?"col-tb-8":"col-tb-12") ?>">		
 			<h2><?php the_sub_field("encan_titre") ?></h2>
 			<div class="description">
 				<?php the_sub_field("encan_description") ?>

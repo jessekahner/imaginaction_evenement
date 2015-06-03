@@ -66,7 +66,7 @@ function imaginaction_setup() {
 	/* IMAGE SIZES
 	=================================================================== */
 	// add_image_size( "main_thumbnail", 235, 170 ,true );
-	add_image_size( "image_principale", 405, 0 ,true );
+	add_image_size( "image_principale", 460, 305 ,true );
 
 
 	// This theme uses wp_nav_menu() in one location.

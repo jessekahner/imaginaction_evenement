@@ -44,7 +44,6 @@ global $translation_name, $ng_apps;
 				</div>
 				<div class="header-right col-md-10">
 					<div class="above-nav clearfix">
-						<div class="col-sm-9 col-md-3 col-lg-4 search-form-wrapper hidden-xs"><?php include (TEMPLATEPATH . '/searchform.php'); ?></div>
 						<div class="mobile-lang col-md-3 col-sm-3 hidden-lg hidden-md hidden-xs">
 						
 						<div class="info-box col-xs-12 col-sm-5 col-md-6 col-lg-5">
