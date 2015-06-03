@@ -1,0 +1,30 @@
+@import "common";
+
+.post-image,
+.encan__item-image
+{
+
+	img
+	{
+		display:block;
+		width:100%;
+		height:auto;
+
+		max-width:405px;
+		margin:0 auto;
+	}
+}
+
+.encan
+{
+	&__item
+	{
+		&-image
+		{
+			img
+			{
+
+			}
+		}
+	}
+}

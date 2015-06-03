@@ -1,0 +1,12 @@
+{
+  "sources" : [
+    "js\/script.coffee"
+  ],
+  "mappings" : ";AAAA,IAAA,MAAA;;AAAA,CAAA,GAAI,MAAJ,CAAA;;AAAA,YAAA,CAAA;;AAAA,GAIA,GACC;AAAA,EAAA,KAAA,EAAO,IAAP;AAAA,EACA,eAAA,EAAgB,SAAA,GAAA,CADhB;AAAA,EAGA,IAAA,EAAK,SAAA,GAAA;WACJ,GAAG,CAAC,eAAJ,CAAA,EADI;EAAA,CAHL;CALD,CAAA;;AAAA,MAWA,CAAO,SAAA,GAAA;SACN,GAAG,CAAC,IAAJ,CAAA,EADM;AAAA,CAAP,CAXA,CAAA",
+  "sourceRoot" : ".\/..\/",
+  "names" : [
+
+  ],
+  "file" : "script.min.js",
+  "version" : 3
+}

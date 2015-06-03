@@ -1,0 +1,408 @@
+@import "variables";
+@import "mixins";
+
+
+@import "normalize";
+// @import "icons";
+@import "gridder";
+
+
+/* MAIN BODY
+=================================================================== */
+body
+{
+  font-family: 'Roboto', Arial, Verdana, sans-serif;
+  font-size:16px;
+  color:$txtcolor;
+  font-weight:400;
+  background-color:$bgcolor;
+  // height:100%;
+  line-height:1.5em;
+}
+#page
+{
+  overflow-x:hidden;
+}
+
+/* FONT-SIZES
+=================================================================== */
+
+/* COLORS
+=================================================================== */
+	/* MAUVE
+	=================================================================== */
+	.entry-content a,
+	.encan__item-contenu a,
+	{
+		color:$mauve;
+	}
+
+
+/* BACKGROUND-COLORS
+=================================================================== */
+
+/* CLEAR
+=================================================================== */
+	/* CLEARFIX
+	=================================================================== */
+	%clearfixe
+	{
+		zoom: 1;
+		&:before, &:after { content: ""; display: table; }
+		&:after { clear: both; }
+	}
+	.clearfix,.group {
+	 	@extend %clearfixe;
+	}
+	/* NONE
+	=================================================================== */
+	/* BOTH
+	=================================================================== */
+	.clear-all,
+	%clear-all
+	{
+		clear:both;
+	}
+	/* LEFT
+	=================================================================== */
+	.clear-left,
+	%clear-left,
+	{
+		clear:left;
+	}
+	/* RIGHT
+	=================================================================== */
+	.clear-right,
+	%clear-right
+	{
+		clear:right;
+	}
+
+/* TEXT-DECORATION
+=================================================================== */
+
+/* DISPLAY
+=================================================================== */
+	/* NONE
+	=================================================================== */
+	hr,
+	{
+		display:none;
+	}
+
+/* OTHERS
+=================================================================== */
+	/* EXTENDS!
+	=================================================================== */
+	%hide-text,
+	.hide-text
+	{
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+
+
+	/* CHROME FRAME
+	=================================================================== */
+	.chromeframe
+	{
+		background-color:lighten(yellow,5%);
+		margin:0;
+		padding:1em;
+	}
+
+	/* EDIT LINK
+	=================================================================== */
+	footer.entry-meta .edit-link a
+	{
+		// @include border-radius(0.5em);
+		padding:0.2em 0.6em;
+		// @include inline-block;
+	}
+
+	/* HEIGHT 100%
+	=================================================================== */
+	%height-full,
+	.height-full
+	{
+		height:100%;
+	}
+	/* MIN-HEIGHT 100%
+	=================================================================== */
+	%minheight-full,
+	.minheight-full
+	{
+		min-height:100%;
+	}
+
+	/* RESET PADDINGS + MARGINS
+	=================================================================== */
+	%reset-pm
+	{
+		margin:0;
+		padding:0;
+	}
+	.reset-pm
+	{
+		@extend %reset-pm;
+	}
+
+	/* RESET UL + OL
+	=================================================================== */
+	%reset-ul-ol
+	{
+		margin:0;
+		padding:0;
+
+		list-style:none;
+	}
+	.reset-ul-ol,
+	.reset-ul-ol li,
+	{
+		@extend %reset-ul-ol;
+	}
+	.reset-ul-ol li:before
+	{
+		content:none !important;
+	}
+
+	/* RESET BUTTON
+	=================================================================== */
+	%reset-button,
+	.reset-button,
+	{
+		padding:0;
+		margin:0;
+		outline:0;
+		border:none;
+		background:none;
+		text-shadow: none;
+	}
+
+	/* FULL-WIDTH
+	=================================================================== */
+	.full-width,
+	%full-width
+	{
+		width:100%;
+	}
+
+	.wide-panel,
+	%wide-panel,
+	{
+		margin:0 -100%;
+		padding-left:100%;
+		padding-right:100%;
+
+	}
+
+iframe[src="about:blank"]{display:none;}
+
+
+div.entry-content,
+div.encan-liste,
+{
+	@include rem-fallback(line-height, 1.5);
+	// line-height:1.25rem;
+
+	/* HEADINGS
+	=================================================================== */
+	h1,h2,h3,h4
+	{
+		@extend %reset-pm;
+		// line-height:1.25;
+
+		b,strong
+		{
+			font-weight:700;
+		}
+	}
+
+	h2
+	{
+		@include rem-fallback(margin,1.5,0)
+	}
+
+	h3
+	{
+		margin:1em 0 -0.5em 0;
+	}
+
+	h4
+	{
+		// margin-bottom:-1em;
+		line-height:1.25;
+		@include rem-fallback(margin-bottom,-0.625)
+	}
+	
+	/* LISTS
+	=================================================================== */
+	ul,ol
+	{
+		@extend %reset-pm;
+		list-style:none;
+
+		margin:-0.5em 0 -0.5em 2.5em;
+
+		li
+		{
+			position:relative;
+			list-style:none;
+			/*padding-left:1.5em;*/
+
+			// margin:0.5em 0;
+
+			// line-height:1.35em;
+		}
+	}
+
+	h1 + ul, h2 + ul, h3 + ul, h4 + ul,
+	h1 + ol, h2 + ol, h3 + ol, h4 + ol
+	{
+		@include rem-fallback(margin-top,0.5);
+	}
+
+
+	ul li
+	{
+		&:before
+		{
+			// @include inline_block;
+			border-radius: 100%;
+
+			content:"";
+			left:-0.75em;
+			top:0.5625em;
+			line-height:1;
+			position:absolute;
+			height:0.325em;
+			width:0.325em;
+			background-color:$txtcolor
+		}
+		// &:before
+		// {
+		// 	// @include inline_block;
+		// 	/*border-radius: 100%;*/
+		// 	padding-right:0.4em;
+		// 	content:"•";
+		// 	font-size:10pt; 
+
+		// 	/*left:0;
+		// 	top:0.8125em;*/
+		// 	line-height:1;
+		// 	/*position:absolute;
+		// 	height:0.325em;
+		// 	width:0.325em;*/
+		// }
+	}
+
+	ol li
+	{
+		counter-increment: index;
+
+		&:before
+		{
+			position:absolute;
+			left:-1.25em;
+			top:0;
+			@include rem-fallback(font-size,0.875);
+			content:counter(index)".";
+		}
+	}
+
+	/* BLOCKQUOTE
+	=================================================================== */
+	blockquote
+	{
+		// @extend %reset-pm;
+
+		// padding:0 1.875em;
+		// margin:1em 0;
+		// border-top:1px solid $txtcolor;
+		// border-bottom:1px solid $txtcolor;
+	}
+
+	/* IMAGES
+	=================================================================== */
+	img
+	{
+		// display:block;
+		&.alignleft{
+			float:left;
+			margin-right:1.25em;
+		}
+		&.alignright{
+			float:right;
+			margin-left:1.25em;
+		}
+	}
+
+	/* TABLES
+	=================================================================== */
+	table
+	{
+		width:100%;
+		table-layout: fixed;
+		border:1px solid $bgcolor;
+		@include rem-fallback(border-radius,1);
+		overflow:hidden;
+
+		th,td
+		{
+			padding:0.5em 1em;
+			border:1px solid $bgcolor;
+		}
+
+		thead th
+		{
+			padding:0.75em 1em;
+		}
+
+		// tbody
+		// {
+		// 	tr
+		// 	{
+		// 		td
+		// 		{
+		// 			background-color:$bgcolor;
+		// 		}
+		// 		th:first-child,
+		// 		td:first-child
+		// 		{
+		// 			// background-color:mix($orange,$bgcolor,20%);
+		// 		}
+		// 	}
+		// 	tr:nth-child(even){
+		// 		td
+		// 		{
+		// 			background-color:$greyinput;
+		// 		}
+		// 		th:first-child,
+		// 		td:first-child
+		// 		{
+		// 			// background-color:mix($orange,$bgcolor,35%);
+		// 		}
+		// 	}
+		// }
+
+
+	}
+
+	/* CHILDREN
+	=================================================================== */
+	& > *:first-child
+	{
+		margin-top:0;
+	}
+
+	& > *:last-child,
+	& > *:last-child > *:last-child,
+	& > *:last-child > *:last-child > *:last-child,
+	& > *:last-child > *:last-child > *:last-child > *:last-child,
+	& > *:last-child > *:last-child > *:last-child > *:last-child > *:last-child
+	{
+		margin-bottom: 0;
+	}
+
+}

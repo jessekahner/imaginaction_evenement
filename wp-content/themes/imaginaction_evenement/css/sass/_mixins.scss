@@ -1,0 +1,385 @@
+@mixin col($nbCol:3,$gutter:20px, $width:$max-width){
+	// $totalWidth:$width; 
+	$nth:"#{$nbCol}n+1";
+	
+	$new_width: (($width - ($gutter * ($nbCol - 1))) / $nbCol);
+	width:percentage($new_width/$width);
+	
+
+	margin-left: $gutter;
+	margin-bottom: $gutter;
+	float:left;
+	&:first-child{
+		margin-left: 0px;
+	}
+	&:nth-child(#{$nth}){
+		margin-left:0px;
+		clear:left;
+	}
+
+	// &:before
+	// {
+	// 	content:$width;
+	// }
+}
+
+
+
+
+@mixin gradient($directions,$start,$end)
+{
+	@include background(linear-gradient($directions,$start,$end));
+	.ie9 &
+	{
+		filter:none;
+	}
+
+	.lt-ie9 &
+	{
+		background-color: $start;
+		@include filter-gradient($start, $end, vertical);
+	}
+	
+}
+
+@mixin shadow($color:#000,$hoff:0px,$voff:-8px,$blur:12px,$spread:-12px,$inset:false,$alt_color:$color)
+{
+	margin:0 auto;
+	max-width:1250px;
+	// min-width:995px;
+	height:35px;
+	display:block;
+	content:"";
+	position:relative;
+
+	@if $voff <0{
+		margin-bottom:-25px;
+	}@elseif($voff>0){
+		margin-top:-25px;
+	}
+
+	@include single-box-shadow($color,$hoff,$voff,$blur,$spread,$inset);
+	.no-boxshadow &
+	{
+		@if $voff <0{
+		border-top:1px solid $alt_color;
+		}@elseif($voff>0){
+		border-bottom:1px solid $alt_color;
+		}
+	}
+}
+
+
+@mixin menu-row($margin:0.75rem, $padding:$margin, $border-color:$txtcolor, $direction:right, $float:left)
+{
+
+	@include rem-fallback(line-height, 1);
+	float: $float;
+
+	
+	// line-height:1rem;
+
+	// padding-#{$direction}:$padding;
+	// margin-#{$direction}:$margin;
+	@include rem-fallback(padding-#{$direction}, $padding);
+	@include rem-fallback(margin-#{$direction}, $margin);
+	
+
+	border-#{$direction}:1px solid $border-color;
+
+	&.last,
+	&:last-child,
+	{
+		padding-#{$direction}:0;
+		margin-#{$direction}:0;
+		border-#{$direction}:0;
+	}
+}
+
+
+@mixin menu-justified($width: null, $height:auto)
+{
+	text-align:justify;
+	@if $width != null{
+		width:$width;
+	}
+	height:$height;
+
+	&:after
+	{
+		@extend %inline_block;
+		content:"";
+		width:100%;
+	}
+
+}
+
+
+
+
+@mixin css-triangles($width:20px,$height:10px,$color:red,$direction:top,$center:true, $type:isoceles)
+{
+	/* $type not yet implemented
+	=================================================================== */
+	
+	&:before
+	{
+		content:"";
+		position:absolute;
+		height:0;
+		width:0;
+		border-style:solid;
+
+		@if $center==true{
+
+			@if $direction=="top" or $direction =="bottom" {
+			left:50%;
+			margin-left:-($width/2);
+			} @elseif $direction=="left" or $direction=="right" {
+			top:50%;
+			margin-top:-($width/2);
+			}
+		}
+		
+		@if $direction=="top"{
+			top: -($height);
+
+			border-width:0 ($width/2) $height ($width/2);
+			border-color:transparent transparent $color transparent;
+		} @elseif $direction=="bottom" {
+			bottom:-$height;
+
+			border-width:$height ($width/2) 0 ($width/2);
+			border-color:$color transparent transparent transparent;
+		} @elseif $direction=="right" {
+			right:-$height;
+
+			border-width:($width/2) 0 ($width/2) $height;
+			border-color:transparent transparent transparent $color;
+		} @elseif $direction=="left" {
+			left:-$height;
+
+			border-width:($width/2) $height ($width/2) 0;
+			border-color:transparent $color transparent transparent;
+		}
+	}
+}
+
+
+@mixin seperator($basewidth:20px,$gap:7px,$border-width:40px,$border-color:red,$background-before:orange,$background-after:$background-before,$height:100%)
+{
+	// BORDER-WIDTH: angle of arrow
+	// GAP: width of arrow
+
+	// display:none !important;
+
+	background-color:$background-before;
+	// background-color:orange;
+	min-width:($basewidth + $gap);
+
+	font-size:0;
+
+	// height:100%;
+	// min-height
+
+	height:$height;
+
+	position: absolute;
+	// display:table-cell;
+
+	right:0px;
+	top:50%;
+	// top:-8px;
+	// margin-top:-($height/2);
+	transform: translateY(-50%);
+
+	overflow:hidden;
+
+
+	&:before, &:after{
+		content:"";
+		position: absolute;
+		width: 0px;
+		height: 0px;
+		top:50%;
+		right:0px;
+		margin-top:-$border-width;
+		border-style: solid;
+		border-width: $border-width 0 $border-width $basewidth;
+		border-color: transparent transparent transparent $border-color;
+	}
+	&:after{
+		border-color: transparent transparent transparent $background-after;
+		right:$gap;
+	}
+}
+
+
+
+@mixin vertical-align($valign:middle)
+{
+	// & > *
+	// {
+		display:inline-block;
+		vertical-align: $valign;
+		height: 100%;
+    	// text-align: left;
+	// }
+	&:before
+	{
+		content: '';
+	    display: inline-block;
+		vertical-align: $valign;
+	    height: 100%;
+	}
+}
+
+
+@mixin gradient-overlay($direction:top,$startcolor:red,$endcolor:black,$width:100%,$height:$width,$percent:0%,$otherpercent:50%,$ieopacity:0.5)
+{
+
+	&:after
+	{
+
+		// @include background(linear-gradient($direction,$startcolor $percent,$endcolor $otherpercent));
+		
+		position:absolute;
+		// postion:relative;
+		content:"";
+		top:0;
+		left:0;
+		width:$width;
+		height:$height;
+
+		display:block;
+
+		.ie9 &
+		{
+			filter:none;
+		}
+
+	}
+	.lt-ie9 &
+	{
+		background-color: $startcolor;
+		// @include filter-gradient($startcolor, blue, horizontal);
+		// @include opacity($ieopacity);
+		// -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	}
+}
+
+
+@function strip-unit($num) {
+	@return $num / ($num * 0 + 1);
+}
+
+@mixin rem-fallback($property, $values...) {
+	$max: length($values);
+	$pxValues: '';
+	$remValues: '';
+
+	@for $i from 1 through $max {
+	$value: strip-unit(nth($values, $i));
+		$pxValues: #{$pxValues + $value*16}px;
+
+		@if $i < $max {
+			$pxValues: #{$pxValues + " "};
+		}
+	} 
+
+	@for $i from 1 through $max {
+		$value: strip-unit(nth($values, $i));
+		$remValues: #{$remValues + $value}rem;
+
+		@if $i < $max {
+			$remValues: #{$remValues + " "};
+		}
+	} 
+
+	#{$property}: $pxValues; 
+	#{$property}: $remValues;
+}
+
+
+@mixin calc($property, $expression) {
+  #{$property}: -moz-calc(#{$expression});
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}
+
+
+
+/* PANELS - COLLAPSE-ME
+=================================================================== */
+@mixin panels($class:'.panels')
+{
+	#{$class}
+	{
+		border-bottom: 1px solid $greyborders;
+		margin: 2.5em 0 !important;
+		padding-bottom: 1.25em;
+		
+		&__content
+		{
+			padding-bottom:1.5em;
+		}
+
+		&__title
+		{
+			@include rem-fallback(padding-right,2.5);
+		}
+	}
+	// .collapse-item,
+	// 		{
+	// 			border-bottom: 1px solid $greyborders;
+	// 			margin: 2.5em 0 !important;
+	// 			padding-bottom: 1.25em;
+	
+	// 		}
+
+	// 		.panels
+	// 		{
+	// 			&__content
+	// 			{
+	// 				padding-bottom:1.5em;
+	// 			}
+
+	// 			&__title
+	// 			{
+	// 				@include rem-fallback(padding-right,2.5);
+	// 			}
+	// 		}
+}
+
+
+@mixin debug-responsive($color: red)
+{
+	$screens: screen-xs-min, screen-sm-min, screen-md-min, screen-lg-min;
+
+	&:after
+	{
+		content: $screen-xs-min + " - screen-xs-min | " + $screen-sm-min + " - screen-sm-min | " + $screen-md-min + " - screen-md-min | " + $screen-lg-min + " - screen-lg-min";
+		color:$color;
+	}
+
+	// @each $size in $screens {
+	// 	@media (max-width: $$size - 1)
+	// 	{
+	// 		&:before
+	// 		{
+	// 			content: " - lava";
+	// 			color:invert($color);
+	// 		}
+	// 	}
+	// }
+
+
+	// @media (max-width: $screen-xx-min - 1)
+	// {
+	// 	&:after
+	// 	{
+	// 		content: $screen-xx-min + " - screen-xx-min";
+	// 		color:invert($color);
+	// 	}
+	// }
+}

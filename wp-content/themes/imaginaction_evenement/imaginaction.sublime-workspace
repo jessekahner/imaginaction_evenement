@@ -1,0 +1,721 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"scree",
+				"screen-md-min"
+			],
+			[
+				"udem",
+				"udem_calendrier"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"bor",
+				"bordergrey_light"
+			],
+			[
+				"calen",
+				"calendarSlider"
+			],
+			[
+				"screen-",
+				"screen-sm-min"
+			],
+			[
+				"tweet",
+				"tweetItem"
+			],
+			[
+				"acc",
+				"accentcolor_alt"
+			],
+			[
+				"backgroun",
+				"background-color"
+			],
+			[
+				"bgcolor",
+				"bgcolor_dark"
+			],
+			[
+				"bordergr",
+				"bordercolor_light"
+			],
+			[
+				"bordercolor",
+				"bordercolor_light"
+			],
+			[
+				"display",
+				"display-block"
+			],
+			[
+				"tran",
+				"transparent"
+			],
+			[
+				"gu",
+				"grid-gutter-width"
+			],
+			[
+				"trans",
+				"transition-delay"
+			],
+			[
+				"le",
+				"letter-spacing"
+			],
+			[
+				"footer",
+				"footer-menu-label"
+			],
+			[
+				"row-menu-footer",
+				"rows-menu-footer"
+			],
+			[
+				"border",
+				"bordercolor"
+			],
+			[
+				"rem",
+				"rem-fallback"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"col",
+				"collapse"
+			],
+			[
+				"is-table",
+				"is-table-cell"
+			],
+			[
+				"re",
+				"rem-fallback"
+			],
+			[
+				"lo",
+				"lowercase"
+			],
+			[
+				"wid",
+				"full-width"
+			],
+			[
+				"height",
+				"height-full"
+			],
+			[
+				"index",
+				"index_enable"
+			],
+			[
+				"ext",
+				"extensionPath"
+			],
+			[
+				"backgorund",
+				"background-color"
+			],
+			[
+				"grid",
+				"grid-gutter-width"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"selected_items":
+		[
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"ss typo",
+				"Set Syntax: TypoScript"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"redin",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"re",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"rei",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"ss tpyo",
+				"Set Syntax: TypoScript"
+			],
+			[
+				"updTE",
+				"Emmet: Update Image Size"
+			],
+			[
+				"tab spa",
+				"String Utilities: Convert Tabs to Spaces"
+			],
+			[
+				"conver",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"ss  typo",
+				"Set Syntax: TypoScript"
+			],
+			[
+				"typo",
+				"Set Syntax: TypoScript"
+			],
+			[
+				"sni css",
+				"Snippet: csscom"
+			],
+			[
+				"reinde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"ss typ",
+				"Set Syntax: TypoScript"
+			],
+			[
+				"ss ty",
+				"Set Syntax: TypoScript"
+			],
+			[
+				"ss tpo",
+				"Set Syntax: TypoScript"
+			],
+			[
+				"set typos",
+				"Set Syntax: TypoScript"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"pre",
+				"Preferences: Settings - Default"
+			],
+			[
+				"fe",
+				"Fetch: Manage"
+			],
+			[
+				"fet",
+				"Fetch: Manage"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 457.0
+	},
+	"console":
+	{
+		"height": 126.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/jessekahner/www/udm-nouvelles/assets/css/sass/_common.scss",
+		"/Users/jessekahner/www/udm-nouvelles/assets/css/sass/style.scss",
+		"/Users/jessekahner/www/udm-nouvelles/typo3conf/ext/udm_nouvelles/Resources/Private/Partials/accueil_static.html",
+		"/Users/jessekahner/www/udm-nouvelles/assets/css/sass/_icons.scss",
+		"/Users/jessekahner/www/udm-nouvelles/assets/js/app.min.js",
+		"/Users/jessekahner/www/udm-nouvelles/assets/js/app.enquire.coffee",
+		"/Users/jessekahner/www/udm-nouvelles/typo3conf/ext/udm_nouvelles/Configuration/TypoScript/setup.txt",
+		"/Users/jessekahner/www/udm-nouvelles/typo3conf/ext/udm_nouvelles/Resources/Private/Partials/Article_static.html",
+		"/Users/jessekahner/www/udm-nouvelles/typo3conf/ext/udm_nouvelles/Configuration/TypoScript/pageTsConfig.ts",
+		"/Users/jessekahner/www/udm-nouvelles/typo3conf/ext/udm_nouvelles/Configuration/TypoScript/libs/header.mainnav.txt",
+		"/Users/jessekahner/www/udm-nouvelles/typo3conf/ext/udm_nouvelles/Resources/Private/Layouts/Categorie.html",
+		"/Users/jessekahner/www/udm-nouvelles/typo3conf/ext/udm_nouvelles/Resources/Private/Layouts/Dans_medias.html",
+		"/Users/jessekahner/www/udm-nouvelles/typo3conf/ext/udm_nouvelles/Resources/Private/Layouts/Salle_presse.html",
+		"/Users/jessekahner/www/udm-nouvelles/typo3conf/ext/udm_nouvelles/Resources/Private/Partials/Categorie_static.html",
+		"/Users/jessekahner/www/udm-nouvelles/assets/js/_sliders.coffee",
+		"/Users/jessekahner/www/udm-nouvelles/typo3conf/ext/udm_nouvelles/Resources/Private/Layouts/Article.html",
+		"/Users/jessekahner/www/udm-nouvelles/assets/js/app.coffee",
+		"/Users/jessekahner/Library/Application Support/Sublime Text 2/Packages/Emmet/Default (OSX).sublime-keymap",
+		"/Users/jessekahner/www/udm-nouvelles/typo3conf/ext/udm_nouvelles/Resources/Private/Templates/Content/get_twitter.html",
+		"/Users/jessekahner/www/udm-nouvelles/typo3conf/ext/udm_nouvelles/Resources/Private/Library/user_functions.php",
+		"/Users/jessekahner/www/udm-nouvelles/assets/js/_global.coffee",
+		"/Users/jessekahner/www/udm-nouvelles/assets/js/animation.coffee",
+		"/Users/jessekahner/www/udm-nouvelles/typo3conf/ext/udm_nouvelles/Configuration/TypoScript/libs/header.txt",
+		"/Users/jessekahner/www/udm-nouvelles/typo3conf/ext/udm_nouvelles/Resources/Private/Layouts/default.html",
+		"/Users/jessekahner/www/udm-nouvelles/typo3conf/ext/udm_nouvelles/Resources/Private/Partials/header_others.html",
+		"/Users/jessekahner/www/udm-nouvelles/assets/css/sass/_variables.scss",
+		"/Users/jessekahner/www/udm-nouvelles/typo3conf/ext/udm_nouvelles/Configuration/TypoScript/libs/header.bookmarks.txt",
+		"/Users/jessekahner/www/udm-nouvelles/typo3conf/ext/udm_nouvelles/Resources/Private/Partials/header.html",
+		"/Users/jessekahner/www/udm-nouvelles/typo3conf/ext/udm_nouvelles/Resources/Private/Layouts/chose.html",
+		"/Users/jesse/site/udm-nouvelles/typo3conf/ext/udm_nouvelles/Resources/Private/Partials/header.html",
+		"/Users/jesse/site/udm-nouvelles/typo3conf/ext/udm_nouvelles/Configuration/TypoScript/setup.txt",
+		"/Users/jesse/site/udm-nouvelles/assets/css/sass/bootstrap/bootstrap.scss",
+		"/Users/jesse/site/udm-nouvelles/assets/css/sass/bootstrap/_scaffolding.scss",
+		"/Users/jesse/site/udm-nouvelles/typo3conf/ext/news/Resources/Private/Partials/Detail/FalMediaImage.html",
+		"/Users/jesse/site/udm-nouvelles/typo3_src-6.2.6/typo3/sysext/css_styled_content/static/setup.txt",
+		"/Users/jesse/site/udm-nouvelles/typo3conf/ext/get_twitter",
+		"/Users/jesse/site/udm-nouvelles/typo3conf/ext/gridelements_fce/Documentation/Introduction/Index.rst",
+		"/Users/jesse/site/udm-nouvelles/typo3conf/ext/udm_nouvelles/Configuration/TypoScript/libs/header.txt",
+		"/Users/jesse/site/udm-nouvelles/typo3conf/ext/udm_nouvelles/Configuration/TypoScript/libs/header.mainnav.txt",
+		"/Users/jesse/site/udm-nouvelles/typo3conf/ext/udm_nouvelles/Resources/Private/Layouts/default.html",
+		"/Users/jesse/site/udm-nouvelles/typo3conf/ext/udm_nouvelles/Resources/Private/Partials/footer.html",
+		"/Users/jesse/site/udm-nouvelles/typo3conf/ext/udm_nouvelles/Configuration/TypoScript/wizards/akfn_fluid_content_getTwitter.txt",
+		"/Users/jesse/site/udm-nouvelles/typo3conf/ext/udm_nouvelles/Resources/Private/Partials/header_others.html",
+		"/Users/jesse/site/udm-nouvelles/typo3conf/ext/udm_nouvelles/Configuration/TypoScript/libs/footer.txt",
+		"/Users/jesse/site/udm-nouvelles/assets/img/universite_de_mtl.svg",
+		"/Users/jesse/site/udm-nouvelles/typo3conf/ext/udm_nouvelles/Resources/Private/Partials/header_home.html",
+		"/Users/jesse/site/udm-nouvelles/typo3conf/ext/udm_nouvelles/ext_autoload.php",
+		"/Users/jesse/site/udm-nouvelles/typo3conf/ext/udm_nouvelles/ext_emconf.php",
+		"/Users/jesse/site/udm-nouvelles/typo3conf/ext/udm_nouvelles/ext_localconf.php",
+		"/Users/jesse/site/udm-nouvelles/typo3conf/ext/udm_nouvelles/ext_tables.php",
+		"/Users/jesse/site/udm-nouvelles/assets/css/sass/_bootstrap_variables.scss",
+		"/Users/jesse/site/udm-nouvelles/assets/css/sass/style.scss",
+		"/Users/jesse/site/udm-nouvelles/assets/css/sass/_mixins.scss",
+		"/Users/jesse/site/udm-nouvelles/assets/js/_template.coffee",
+		"/Users/jesse/site/udm-nouvelles/assets/js/_template.min.js",
+		"/Users/jesse/site/udm-nouvelles/assets/js/template.min.js.map",
+		"/Users/jesse/site/udm-nouvelles/assets/css/sass/_common.scss",
+		"/Users/jesse/site/udm-nouvelles/assets/css/sass/_variables.scss",
+		"/Users/jesse/site/udm-nouvelles/assets/js/_global.coffee",
+		"/Users/jesse/site/udm-nouvelles/assets/js/app-ck-source-map-reference.coffee",
+		"/Users/jesse/site/udm-nouvelles/assets/js/app.coffee",
+		"/Users/jesse/site/udm-nouvelles/assets/js/app.min.js",
+		"/Users/jesse/site/udm-nouvelles/assets/js/animation.coffee",
+		"/Users/jesse/site/udm-nouvelles/typo3conf/ext/udm_nouvelles/Resources/Private/Templates/Content/get_twitter.html",
+		"/Users/jesse/site/udm-nouvelles/typo3conf/ext/udm_nouvelles/Configuration/TypoScript/wizards/main_tab.txt",
+		"/Users/jesse/site/udm-nouvelles/typo3conf/ext/news/Configuration/TypoScript/setup.txt",
+		"/Users/jesse/site/udm-nouvelles/typo3conf/ext/news/Resources/Private/Templates/News/Detail.html",
+		"/Users/jesse/site/udm-nouvelles/typo3conf/realurl_autoconf.php",
+		"/Users/jesse/site/udm-nouvelles/assets/css/sass/_icons.scss",
+		"/Users/jesse/site/udm-nouvelles/assets/css/sass/_icon.scss",
+		"/Users/jesse/site/udm-nouvelles/assets/css/_icon.min.css.map",
+		"/Users/jesse/site/udm-nouvelles/typo3conf/ext/udm_nouvelles/Configuration/TypoScript/libs/prefooter.txt",
+		"/Users/jesse/site/udm-nouvelles/assets/css/style.min.css",
+		"/Users/jesse/site/udm-nouvelles/assets/css/style.min.css.map",
+		"/Users/jesse/site/udm-nouvelles/typo3conf/ext/udm_nouvelles/Configuration/TypoScript/constants.txt",
+		"/Users/jesse/site/udm-nouvelles/typo3conf/ext/udm_nouvelles/Configuration/TypoScript/pageTsConfig.ts",
+		"/Users/jesse/site/udm-nouvelles/typo3conf/ext/udm_nouvelles/Configuration/TypoScript/userTsConfig.ts",
+		"/Users/jesse/site/udm-nouvelles/typo3conf/ext/gridelements/Classes/Hooks/PageRenderer.php",
+		"/Users/jesse/site/udm-nouvelles/fileadmin/templates/default.html",
+		"/Users/jesse/site/udm-nouvelles/fileadmin/Template/default.html",
+		"/Users/jesse/site/udm-nouvelles/typo3_src-6.2.6/typo3/sysext/core/Classes/Error/DebugExceptionHandler.php",
+		"/Users/jesse/site/udm-nouvelles/typo3_src-6.2.6/typo3/dummy.php",
+		"/Users/jesse/site/udm-nouvelles/assets/js/scripts.min.js",
+		"/Users/jesse/site/udm-nouvelles/assets/js/scripts.min.js.map",
+		"/Users/jesse/site/udm-nouvelles/assets/js/_global.min.js",
+		"/Users/jesse/site/udm-nouvelles/assets/css/sass/bootstrap/mixins/_grid-framework.scss",
+		"/Users/jesse/site/udm-nouvelles/typo3conf/ext/news/Documentation/Main/Templating/ViewHelpers/Social/Facebook/LikeViewHelper.rst",
+		"/Users/jesse/site/udm-nouvelles/typo3conf/ext/news/Resources/Private/Partials/Detail/MediaImage.html",
+		"/Users/jesse/site/udm-nouvelles/typo3_src-6.2.6/typo3/contrib/idna/idna_convert.class.php",
+		"/Users/jesse/site/udm-nouvelles/typo3_src-6.2.6/typo3/sysext/reports/Classes/ViewHelpers/IconViewHelper.php",
+		"/Users/jesse/site/udm-nouvelles/assets/config.codekit",
+		"/Users/jesse/site/udm-nouvelles/assets/bower_components/modernizr/feature-detects/css-objectfit.js",
+		"/Users/jesse/site/udm-nouvelles/typo3_src-6.2.6/ChangeLog",
+		"/Users/jesse/site/udm-nouvelles/typo3conf/LocalConfiguration.php",
+		"/Users/jesse/site/udm-nouvelles/typo3conf/ext/news/Resources/Private/Layouts/General.html",
+		"/Users/jesse/site/udm-nouvelles/typo3conf/ext/udm_nouvelles/Resources/Private/Partials/prefooter.html",
+		"/Users/jesse/site/fep-2014110701/fileadmin/templates/ext/lbo_fluid_content/Templates/Content/ligneDeuxContenus.html",
+		"/Users/jesse/site/fep-2014110701/fileadmin/templates/typoscript/setup.txt",
+		"/Users/jesse/site/fep-2014110701/typo3conf/ext/lbo_t3config/Configuration/TypoScript/tsconfig/tsconfig.stp.ts",
+		"/Users/jesse/site/udm-nouvelles/assets/css/sass/red.scss",
+		"/Users/jesse/site/udm-nouvelles/typo3conf/ext/udm_nouvelles/Resources/Private/Layouts/Content.html",
+		"/Users/jesse/site/fep-2014110701/fileadmin/templates/ext/lbo_fluid_content/Layouts/Content.html",
+		"/Users/jesse/site/udm-nouvelles/typo3conf/ext/udm_nouvelles/Resources/Private/Templates/default.html",
+		"/Users/jesse/site/udm-nouvelles/assets/js/scripts.coffee",
+		"/Users/jesse/site/udm-nouvelles/assets/js/plugins.coffee",
+		"/Users/jesse/site/udm-nouvelles/assets/js/plugins.min.js",
+		"/Users/jesse/Library/Application Support/Sublime Text 3/Packages/User/csscom.sublime-snippet",
+		"/Users/jesse/site/udm-nouvelles/assets/css/sass/print.scss",
+		"/Users/jesse/Library/Application Support/Sublime Text 3/Packages/User/test",
+		"/Users/jesse/site/udm-nouvelles/assets/css/sass/typo3_backend.scss",
+		"/Users/jesse/site/udm-nouvelles/typo3conf/ext/gridelements/ext_tables.php",
+		"/Users/jesse/site/udm-nouvelles/typo3conf/ext/udm_nouvelles/stylesheets/structure/test.css",
+		"/Users/jesse/site/udm-nouvelles/typo3conf/ext/gridelements/Documentation/wizard_form.html",
+		"/Users/jesse/site/udm-nouvelles/typo3conf/ext/metaseo/Classes/Page/Part/MetatagPart.php",
+		"/Users/jesse/site/udm-nouvelles/typo3conf/ext/metaseo/Classes/Page/Part/PagetitlePart.php",
+		"/Users/jesse/site/udm-nouvelles/fileadmin/Template/index.html",
+		"/Users/jesse/site/udm-nouvelles/assets/css/sass/bootstrap/_variables.scss",
+		"/Users/jesse/site/udm-nouvelles/assets/css/sass/bootstrap/_grid.scss",
+		"/Users/jesse/site/udm-nouvelles/typo3_src-6.2.6/typo3/sysext/backend/Classes/View/BackendLayoutView.php",
+		"/Users/jesse/site/udm-nouvelles/typo3_src-6.2.6/typo3/sysext/backend/Classes/View/BackendLayout/DefaultDataProvider.php",
+		"/Users/jesse/site/udm-nouvelles/typo3conf/ext/fluidcontent/Classes/Service/ConfigurationService.php",
+		"/Users/jesse/site/udm-nouvelles/typo3conf/ext/fluidcontent/README.md",
+		"/Users/jesse/site/udm-nouvelles/typo3conf/ext/udm_nouvelles/Resources/Private/Templates/Content/get_twitter.php",
+		"/Users/jesse/site/udm-nouvelles/udem_nouvelles.sublime-project",
+		"/Users/jesse/site/fep-2014110701/fileadmin/templates/ext/lbo_cours/Layouts/Default.html",
+		"/Users/jesse/site/fep-2014110701/typo3conf/ext/lbo_cours/Resources/Private/Layouts/Default.html",
+		"/Users/jesse/site/fep-2014110701/typo3conf/ext/lbo_bottin/Resources/Private/Layouts/Default.html",
+		"/Users/jesse/site/udm-nouvelles/typo3conf/ext/udm_nouvelles/Configuration/TypoScript/header.txt"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Users/jesse/site/udm-nouvelles/assets/css/sass/bootstrap",
+			"/Users/jesse/site/udm-nouvelles/typo3conf/ext/udm_nouvelles",
+			"/Users/jesse/site/udm-nouvelles/typo3conf/ext",
+			"/Users/jesse/site/udm-nouvelles/typo3conf/ext/udm_nouvelles",
+			"/Users/jesse/site/udm-nouvelles/typo3conf/ext/news",
+			"/Users/jesse/site/udm-nouvelles/typo3_src-6.2.6/typo3/sysext",
+			"/Users/jesse/site/udm-nouvelles/typo3conf/ext/udm_nouvelles",
+			"/Users/jesse/site/udm-nouvelles/typo3conf/ext/news",
+			"/Users/jesse/site/udm-nouvelles/typo3conf/ext/udm_nouvelles",
+			"/Users/jesse/site/udm-nouvelles/typo3_src-6.2.6/typo3/sysext",
+			"/Users/jesse/site/udm-nouvelles/typo3conf/ext/udm_nouvelles/Configuration",
+			"/Users/jesse/site/udm-nouvelles/typo3conf/ext/udm_nouvelles",
+			"/Users/jesse/site/udm-nouvelles/typo3conf/ext/news",
+			"/Users/jesse/site/udm-nouvelles/typo3conf/ext/udm_nouvelles",
+			"/Users/jesse/site/udm-nouvelles/typo3conf/ext/news",
+			"/Users/jesse/site/udm-nouvelles/typo3conf/ext/udm_nouvelles",
+			"/Users/jesse/site/udm-nouvelles/typo3conf/ext",
+			"/Users/jesse/site/udm-nouvelles/typo3conf/ext/news",
+			"/Users/jesse/site/fep-2014110701",
+			"/Users/jesse/site/fep-2014110701/fileadmin/templates",
+			"/Users/jesse/site/udm-nouvelles/typo3conf/ext",
+			"/Users/jesse/site/udm-nouvelles/typo3conf/ext/gridelements",
+			"/Users/jesse/site/udm-nouvelles/typo3conf/ext/fluidcontent",
+			"/Users/jesse/site/udm-nouvelles/typo3conf/ext/udm_nouvelles",
+			"/Users/jesse/site/fep-2014110701",
+			"/Users/jesse/site/udm-nouvelles/typo3conf/ext",
+			"/Users/jesse/site/udm-nouvelles/typo3conf/ext/fluidcontent",
+			"/Users/jesse/site/fep-2014110701/typo3conf/ext",
+			"/Users/jesse/site/udm-nouvelles/typo3_src-6.2.6",
+			"/Users/jesse/site/udm-nouvelles/typo3conf/ext/gridelements",
+			"/Users/jesse/site/udm-nouvelles/typo3conf",
+			"/Users/jesse/site/udm-nouvelles/typo3_src-6.2.6",
+			"/Users/jesse/site/fep-2014110701",
+			"/Users/jesse/site/udm-nouvelles/typo3_src-6.2.6",
+			"/Users/jesse/site/fep-2014110701",
+			"/Users/jesse/site/udm-nouvelles/assets/css/sass/bootstrap",
+			"/Users/jesse/site/udm-nouvelles/typo3conf/ext",
+			"/Users/jesse/site/udm-nouvelles/typo3conf/ext/udm_nouvelles",
+			"/Users/jesse/site/udm-nouvelles/typo3conf/ext",
+			"/Users/jesse/site/udm-nouvelles/typo3conf/ext/news",
+			"/Users/jesse/site/udm-nouvelles/typo3conf/ext/metaseo",
+			"/Users/jesse/site/udm-nouvelles/typo3conf/ext/html5boilerplate4",
+			"/Users/jesse/site/udm-nouvelles/typo3_src-6.2.6/typo3/sysext/felogin",
+			"/Users/jesse/site/udm-nouvelles/typo3_src-6.2.6/typo3/sysext",
+			"/Users/jesse/site/udm-nouvelles/typo3_src-6.2.6/typo3",
+			"/Users/jesse/site/udm-nouvelles/typo3conf/ext",
+			"/Users/jesse/site/udm-nouvelles/fileadmin/bsdist",
+			"/Users/jesse/site/udm-nouvelles/typo3conf",
+			"/Users/jesse/site/udm-nouvelles/typo3conf/ext/bsdist/Initialisation",
+			"/Users/jesse/site/udm-nouvelles/typo3conf/ext/bsdist/Initialisation/Files/theme",
+			"/Users/jesse/site/udm-nouvelles/typo3conf/ext/bootstrap_package",
+			"/Users/jesse/site/udm-nouvelles/typo3_src-6.2.6/typo3/sysext",
+			"/Users/jesse/site/udm-nouvelles/typo3_src-6.2.6"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"<f:link.action",
+			"f:link.action",
+			"<div class=\"article__producteurs is-table-row min-height\">\n					<a href=\"#\">Journal Forum</a>\n				</div>",
+			"is-table-cells",
+			"height-fullss",
+			"ste-item clearfix is-table-cell",
+			"iste-lien height-full",
+			" data-mh=\"article-liste-surtitre\"",
+			"acol-md-12 acol-sm-4",
+			"col-md-12 col-sm-4",
+			"is-table-cell",
+			"data-mh=\"jesse\"",
+			"data-mh=\"article-liste-item\"",
+			"article__liste-item",
+			"<div class=\"article__producteurs\">",
+			" data-mh=\"article-liste-contenu\"",
+			"data-mh=\"article-liste-contenu\"",
+			"\">",
+			"sdata-mh=\"categories-liste\"",
+			"article__liste-contenu col-md-12 col-sm-4",
+			"is-table-cell",
+			"sis-table",
+			"is-table ",
+			"article__liste-item",
+			"eight-full",
+			"data-mh=\"categories-liste",
+			"height-full",
+			"article__liste-item",
+			"categories__liste",
+			"data-mh=\"categories-liste\"",
+			"is-table ",
+			"full-width",
+			"categories__",
+			"right",
+			"col-lg-12 ",
+			" data-mh=\"categories-liste\"",
+			"chainesSlider",
+			"cate",
+			"bouton__",
+			"Article_static",
+			"article",
+			"{",
+			"confi",
+			"global",
+			"categorie_static",
+			"pub",
+			";\"",
+			"updaT",
+			".nouvelles",
+			"more-",
+			"more-articles",
+			"update",
+			"series",
+			"length > 0",
+			"					\n",
+			"slider",
+			"pub",
+			".sur_campus__calendrier",
+			"[bxs",
+			"-pager",
+			"series-item align-center clearfix\"",
+			"<!-- <div class=\"bx-controls-custom full-width\">\n					<div class=\"bx-prev-custom\"></div>\n					<div class=\"bx-pager-custom\"></div>\n					<div class=\"bx-next-custom\"></div>\n				</div> -->",
+			"<div class=\"bx-controls-custom full-width\">\n					<div class=\"bx-prev-custom\"></div>\n					<div class=\"bx-pager-custom\"></div>\n					<div class=\"bx-next-custom\"></div>\n				</div>",
+			"bx-pager",
+			"series",
+			"multimanchettes",
+			"slider__series-subtitle",
+			"slider__series-item",
+			"mainblock-content",
+			"$1",
+			"header.",
+			"footer",
+			"menuFooterOpen",
+			"z-index",
+			"#expandable",
+			"menuOpen",
+			"2.5",
+			"footer",
+			"sr-only",
+			"config",
+			"vertical",
+			"UDEM-L",
+			";\n",
+			"langDisable",
+			"web_layout",
+			"lang",
+			"language",
+			"lang",
+			"visited",
+			"84px)",
+			"84px",
+			"$grid-gutter-width",
+			"width",
+			" \n",
+			"catmenu",
+			"left",
+			"11",
+			"absRefPrefix",
+			"allWrap =  |\n    stdWrap.htmlSpecialChars = 0\n    stdWrap.wrap = <span class=\"txt-wrap\">|</span>",
+			"current",
+			"800",
+			"csc-textpic-text",
+			"csc-textpic-imagewrap",
+			"wrap",
+			"IMA",
+			"image",
+			"ima",
+			"allWrap =  |\n    stdWrap.htmlSpecialChars = 0\n    stdWrap.wrap = <span class=\"txt-wrap\">|</span>",
+			"left",
+			"target",
+			"10",
+			"base",
+			"-label",
+			"absolute",
+			"3",
+			"100% 0",
+			"100%\"",
+			"left top",
+			"$(\"rect\")",
+			"!menuOpen",
+			"debug",
+			"animation",
+			"__TEMPLATE__",
+			"transformOrigin: \"center center\"",
+			"transform=\"matrix(1,0,0,1,0,0)\"",
+			"0.5",
+			"r=\"1.5\"",
+			"ry=\"0.5\""
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 98.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"_sl",
+				"assets/js/_sliders.coffee"
+			],
+			[
+				"set",
+				"typo3conf/ext/udm_nouvelles/Configuration/TypoScript/setup.txt"
+			],
+			[
+				"",
+				"typo3conf/ext/udm_nouvelles/Configuration/TypoScript/setup.txt"
+			],
+			[
+				"setup",
+				"typo3conf/ext/udm_nouvelles/Configuration/TypoScript/setup.txt"
+			],
+			[
+				"defa",
+				"fileadmin/Template/default.html"
+			],
+			[
+				"stylsc",
+				"assets/css/sass/style.scss"
+			],
+			[
+				"sty",
+				"assets/css/sass/style.scss"
+			],
+			[
+				"comm",
+				"assets/css/sass/_common.scss"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 202.0,
+	"status_bar_visible": true
+}

@@ -1,0 +1,71 @@
+@import "_gridConfig.scss";
+@import "_helper.scss";
+
+[class*="#{$colPrefix}-"]{
+    width:100%;
+    padding:0 ($gutter / 2);
+    margin-bottom:$gutter;
+    float:left;
+    position: relative;
+    min-height: 1px;
+    
+}
+.container{
+    width:100%;
+    margin:auto;
+    padding: 0 $containerGutter;
+}
+.row{
+    margin-left:-($gutter / 2);
+    margin-right:-($gutter / 2);
+}
+
+@each $key,$value in $query{
+    @media all and (min-width:#{$value}px){ 
+        // Container
+        .container{
+            max-width:#{map-get($container,$key)};
+        }
+        // Grid
+        @for $i from 1 through $nbCols{
+            $percent: (($i) * 100 / $nbCols);
+            .#{$colPrefix}-#{$key}-#{$i}{
+                width: ($percent * 1%);
+            }
+            .#{$colPrefix}-#{$key}-push-#{$i}{
+                left: ($percent * 1%);
+            }
+            .#{$colPrefix}-#{$key}-pull-#{$i}{
+                right: ($percent * 1%);
+            }
+            .#{$colPrefix}-#{$key}-offset-#{$i}{
+                margin-left: ($percent * 1%);
+            }
+            @if $i == 1{
+                .#{$colPrefix}-#{$key}-push-0{
+                    left: auto;
+                }
+                .#{$colPrefix}-#{$key}-pull-0{
+                    right: auto;
+                }
+                .#{$colPrefix}-#{$key}-offset-0{
+                    margin-left:0;
+                }
+            }
+        }
+        @each $k,$v in $custom-cols{
+            .#{$colPrefix}-#{$key}-#{$k}{
+                width:$v;
+            }
+            .#{$colPrefix}-#{$key}-push-#{$k}{
+                left: $v;
+            }
+            .#{$colPrefix}-#{$key}-pull-#{$k}{
+                right: $v;
+            }
+            .#{$colPrefix}-#{$key}-offset-#{$k}{
+                margin-left: $v;
+            }
+        }
+    }
+}
