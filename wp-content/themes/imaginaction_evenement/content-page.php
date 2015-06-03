@@ -35,9 +35,9 @@ if (has_post_thumbnail()) {
 </article><!-- #post-## -->
 
 <?php if (have_rows("encan_item")): ?>
-<div class="encan clear-all">
+<div class="encan clear-all clearfix">
 	<?php while(have_rows("encan_item")): the_row(); ?>
-	<div class="encan__item clear-all">
+	<div class="encan__item clear-all clearfix">
 		<?php if (get_sub_field("encan_image")): ?>
 		<div class="encan__item-image col-tb-4">
 		<?php echo wp_get_attachment_image( get_sub_field("encan_image"), "image_principale"); ?>
@@ -60,8 +60,8 @@ if (has_post_thumbnail()) {
 				<a href="<?php the_sub_field("encan_siteweb_url") ?>" target="_blank"><?php the_sub_field("encan_siteweb_url") ?></a>
 				<?php endif ?>
 			</p>
+			<?php endif ?>
 		</div>
-		<?php endif ?>
 	</div>
 <?php endwhile; ?>
 </div>

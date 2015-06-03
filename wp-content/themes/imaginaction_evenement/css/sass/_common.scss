@@ -33,13 +33,40 @@ body
 	=================================================================== */
 	.entry-content a,
 	.encan__item-contenu a,
+	#masthead nav a,
 	{
 		color:$mauve;
+	}
+	/* BGCOLOR_ALT
+	=================================================================== */
+	#colophon,
+	#masthead,
+	// #masthead nav a:hover,
+	{
+		color:$bgcolor_alt
 	}
 
 
 /* BACKGROUND-COLORS
 =================================================================== */
+	/* MAUVE
+	=================================================================== */
+	#masthead,
+	#colophon,
+	{
+		background-color:$mauve;
+	}
+	/* BGCOLOR_ALT
+	=================================================================== */
+	#masthead nav a,
+	{
+		background-color: $bgcolor_alt;
+	}
+	#masthead nav a:hover,
+	#masthead nav li.current-menu-item a,
+	{
+		background-color:darken($bgcolor_alt,15%);
+	}
 
 /* CLEAR
 =================================================================== */
@@ -80,6 +107,12 @@ body
 
 /* TEXT-DECORATION
 =================================================================== */
+	/* NONE
+	=================================================================== */
+	#masthead nav a,
+	{
+		text-decoration: none;
+	}
 
 /* DISPLAY
 =================================================================== */
@@ -201,7 +234,7 @@ iframe[src="about:blank"]{display:none;}
 
 
 div.entry-content,
-div.encan-liste,
+div.encan__item,
 {
 	@include rem-fallback(line-height, 1.5);
 	// line-height:1.25rem;

@@ -14,7 +14,9 @@ global $translation_name, $post;
 	<hr>
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		
+		<div class="container">
+			<p>&copy;Copyright <?php echo date("Y") ?> <?php echo get_bloginfo('sitename'); ?></p>
+		</div>
     <!-- /End Footer -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

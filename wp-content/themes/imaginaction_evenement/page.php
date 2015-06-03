@@ -12,8 +12,8 @@
 
 get_header(); ?>
 
-		<div id="primary" class="content-area is-relative ">
-			<main id="main" class="site-main container clearfix" role="main">
+		<div id="primary" class="content-area is-relative container">
+			<main id="main" class="site-main clearfix" role="main">
 				<?php do_action("site_breadcrumb") ?>
 				
 				<div class="row">

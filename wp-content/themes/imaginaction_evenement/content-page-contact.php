@@ -7,7 +7,7 @@
 global $translation_name;
 
 ?>
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class("col-tb-8 col-tb-push-4"); ?>>
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
@@ -22,7 +22,7 @@ global $translation_name;
 </article><!-- #post-## -->
 
 <?php if (!has_post_thumbnail()): ?>
-<div id="post-<?php the_ID(); ?>-img" class="post-image col-tb-6">
+<div id="post-<?php the_ID(); ?>-img" class="post-image col-tb-pull-8 col-tb-4">
 	<img src="http://placehold.it/700x500" alt="">
 </div>
 <?php endif ?>
