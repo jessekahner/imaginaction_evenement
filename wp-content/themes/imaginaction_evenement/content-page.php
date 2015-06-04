@@ -49,7 +49,6 @@ if (has_post_thumbnail()) {
 				<?php the_sub_field("encan_description") ?>
 			</div>
 			<?php if (get_sub_field("encan_valeur") > 0): ?>
-			<p>Ce prix à une valeur de <strong><?php echo get_sub_field("encan_valeur") ?>$</strong></p>
 			<?php endif ?>
 			<?php if (get_sub_field("encan_etat") > 0): ?>
 			<p>Les enchères sont à <strong><?php echo get_sub_field("encan_etat") ?>$</strong></p>
