@@ -36,6 +36,10 @@ global $translation_name, $ng_apps;
 
 	<header id="masthead" class="site-header clearfix" role="banner">
 		<div class="is-relative container">
+			<h1 class="site-title"><?php echo get_bloginfo('name'); ?></h1>
+
+			<h2 class="site-slogan"><?php echo get_bloginfo('description'); ?></h2>
+
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 
 				'menu_class' => 'menu' )); ?>
