@@ -180,9 +180,17 @@ function imaginaction_setup() {
 		);
 
 
+		// wp_enqueue_script(
+		// 	'plugins-js',
+		// 	get_template_directory_uri().'/js/plugins.min.js',
+		// 	array("jquery"),
+		// 	null,
+		// 	true
+		// );
+
 		wp_enqueue_script(
-			'plugins-js',
-			get_template_directory_uri().'/js/plugins.min.js',
+			'fancybox-js',
+			get_template_directory_uri().'/bower_components/fancybox/source/jquery.fancybox.js',
 			array("jquery"),
 			null,
 			true
@@ -220,13 +228,21 @@ function imaginaction_setup() {
 			"all"
        );
 
-		// wp_enqueue_style(
-		// 	'bootstrap-custom',
-		// 	get_template_directory_uri().'/css/bootstrap.min.css',
-		// 	false,
-		// 	null,
-		// 	'screen'
-		// );
+		wp_enqueue_style(
+			'bootstrap-custom',
+			get_template_directory_uri().'/css/bootstrap.min.css',
+			false,
+			null,
+			'screen'
+		);
+
+		wp_enqueue_style(
+			'fancybox-css',
+			get_template_directory_uri().'/bower_components/fancybox/source/jquery.fancybox.css',
+			false,
+			null,
+			'screen'
+		);
 		wp_enqueue_style(
 			'imaginaction-style',
 			get_template_directory_uri().'/css/style.min.css',
@@ -234,6 +250,8 @@ function imaginaction_setup() {
 			null,
 			'screen'
 		);
+
+
 
 	}
 	add_action( 'wp_enqueue_scripts', 'imaginaction_styles',100 );
@@ -877,6 +895,80 @@ function mycustom_wpcf7_form_elements( $form ) {
 	return $form;
 }
 
+function cf7_custom_update_subject($cf7){
+	global $post;
+
+	/* So, use prop() method to access them. */
+	$form = $cf7->prop( 'form' );
+	 
+	/* To set the properties, use set_properties() method, like this: */
+	$mail = $cf7->prop( 'mail' );
+
+	$submission = WPCF7_Submission::get_instance();
+	if ( $submission ) {
+	    $posted_data = $submission->get_posted_data();
+	}
+	$mail['subject'] = $posted_data['encan_titre'];
+	$cf7->set_properties( array( 'mail' => $mail ) );
+
+
+	// $fields = get_fields($posted_data['encan_post_id']);
+	update_sub_field(array(
+		'encan_item',
+		$posted_data['encan_rangee']+1,
+		'encan_etat'
+	), $posted_data["valeur_mise"], $posted_data['encan_post_id']);
+
+	return;
+}
+add_action('wpcf7_before_send_mail', 'cf7_custom_update_subject');
+
+
+
+function wpcf7_encan_titre(){
+	global $translation_name,$post,$row_num;
+
+	$field = "field_556e5ae0ea674";
+	$all_fields = get_fields();
+
+	$hidden = "<input type=\"hidden\" name=\"encan_titre\" value=\"".$all_fields["encan_item"][$row_num]["encan_titre"]."\">\n";
+	$hidden .= "<input type=\"hidden\" name=\"encan_rangee\" value=\"".$row_num."\">";
+	$hidden .= "<input type=\"hidden\" name=\"encan_post_id\" value=\"".$post->ID."\">";
+
+	return $hidden;
+}
+wpcf7_add_shortcode( 'encan', 'wpcf7_encan_titre');
+
+function wpcf7_titre_encan(){
+	global $translation_name,$post,$row_num;
+
+	$field = "field_556e5ae0ea674";
+	$all_fields = get_fields();
+
+	$titre ="<h3>".$all_fields["encan_item"][$row_num]["encan_titre"]."</h3>";
+
+	return $titre;
+}
+wpcf7_add_shortcode( 'titre_encan', 'wpcf7_titre_encan');
+
+
+// apply_filters( );
+add_filter('wpcf7_validate_number*', 'wpcf7_check_valeur_encan',55,2);
+function wpcf7_check_valeur_encan( $result, $tag ) {
+	global $post;
+	$submission = WPCF7_Submission::get_instance();
+	if ( $submission ) {
+	    $posted_data = $submission->get_posted_data();
+	}
+
+	$fields = get_fields($posted_data['encan_post_id']);
+
+	if ($fields['encan_item'][$posted_data['encan_rangee']]['encan_etat'] >= $posted_data["valeur_mise"]) {
+		$result->invalidate( $tag, "Désolé, votre mise doit être plus élevée que <strong>".$fields['encan_item'][$posted_data['encan_rangee']]['encan_etat']."$</strong>");
+	}
+
+	return $result;
+}
 
 
 add_filter('wpseo_opengraph_author_facebook', '__return_false');

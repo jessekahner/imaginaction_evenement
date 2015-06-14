@@ -4,7 +4,7 @@
  *
  * @package imaginaction
  */
-global $translation_name;
+global $translation_name, $row_num, $post;
 
 if (has_post_thumbnail()) {
 	$class[] = "col-tb-8";
@@ -36,7 +36,7 @@ if (has_post_thumbnail()) {
 
 <?php if (have_rows("encan_item")): ?>
 <div class="encan clear-all clearfix">
-	<?php while(have_rows("encan_item")): the_row(); ?>
+	<?php $row_num=0; while(have_rows("encan_item")): the_row(); ?>
 	<div class="encan__item clear-all clearfix">
 		<?php if (get_sub_field("encan_image")): ?>
 		<div class="encan__item-image col-tb-4">
@@ -60,8 +60,10 @@ if (has_post_thumbnail()) {
 				<?php endif ?>
 			</p>
 			<?php endif ?>
+			<?php //var_dump(get_field_objects()) ?>
+			<?php //echo do_shortcode('[contact-form-7 id="6" title="Formulaire - encan" ]'); ?>
 		</div>
 	</div>
-<?php endwhile; ?>
+<?php $row_num++; endwhile; ?>
 </div>
 <?php endif ?>

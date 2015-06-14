@@ -32,7 +32,8 @@ html,body,
 		a
 		{
 			@include rem-fallback(padding,0.4375,0.75);
-			@include rem-fallback(border-radius,1);
+			// @include rem-fallback(border-radius,1);
+			border-radius:6px;
 			display:block;	
 			
 			border:2px solid lighten($mauve,25%);
@@ -82,6 +83,38 @@ html,body,
 			}
 		}
 	}
+	.btn-default
+	{
+		text-decoration:none;
+		color:$bgcolor_alt;
+		background-color:$mauve;
+		transition: all 0.3s ease;
+
+		&:hover
+		{
+			background-color: #e6e6e6;
+			color:$mauve;
+			border-color:darken($mauve,10%);
+		}
+	}
+
+}
+
+div.wpcf7
+{
+	display:none;
+	input
+	{
+		width:100%;
+	}
+}
+.fancybox-wrap,
+{
+	width:35% !important;
+}
+.fancybox-inner,
+{
+	width:100% !important;
 }
 
 #colophon
