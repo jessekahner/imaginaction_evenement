@@ -20,7 +20,7 @@ App =
 		App.formulaire.each ()->
 			_this = $(this)
 			_this.before '<p><a href="#'+_this.attr("id")+'" class="lien-mise fancybox btn-lg btn btn-default">Faites une mise!</a></p>'
-			# _this.hide()
+			_this.hide()
 
 		$(".fancybox").fancybox App.fancyOptions
 
