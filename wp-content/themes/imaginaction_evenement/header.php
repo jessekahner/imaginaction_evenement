@@ -26,7 +26,7 @@ global $translation_name, $ng_apps;
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="hfeed site clearfix ">
+<div id="page" class="hfeed site">
 	<!--[if lte IE 9]>
 		<p class="chromeframe"><?php _ex('You are using an <strong>outdated</strong> browser. Please <a href=\"http://browsehappy.com/\">upgrade your browser</a> or <a href=\"http://www.google.com/chromeframe/?redirect=true\">activate Google Chrome Frame</a> to improve your experience.',"Chrome Frame",$translation_name) ?></p>
 	<![endif]-->
